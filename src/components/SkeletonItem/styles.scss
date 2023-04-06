@@ -1,0 +1,68 @@
+.skeletonContainer{
+    background-color: #F8F8F8;
+    width: fit-content;
+    border-radius: 12px;
+    .imgSkeleton{
+        position: relative;
+        width: fit-content;
+        span{
+            &:last-child{
+                position: absolute;
+                bottom: 9px;
+                left: 35%;
+            }
+        }
+    }
+    .textSkeleton{
+        padding: 10px 12px;
+        .headingSkeleton{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .subtextSkeleton{
+            span{
+                &:first-child{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.skeletonContainerHorizontal{
+    display: flex;
+    background: #F8F8F8;
+    .imgSkeletonHorizontal{
+        position: relative;
+        width: fit-content;
+        span{
+            &:last-child{
+                position: absolute;
+                bottom: 9px;
+                left: 32%;
+            }
+        }
+    }
+    .textSkeletonHorizontal{
+        padding: 10px 12px;
+        .headingSkeletonHorizontal{
+            display: flex;
+            margin-bottom: 10px;
+            span{
+                &:first-child{
+                    margin-right: 8px;
+                }
+            }
+        }
+        .subtextSkeletonHorizontal{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+        .secondSkeleton{
+            margin-bottom: 8px;
+        }
+    }
+    
+}

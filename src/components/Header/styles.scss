@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px;
+    .headerBlock{
+        svg{
+            cursor: pointer;
+            &:first-child{
+                margin-right: 16px;
+            }
+        }
+        .active:hover{
+            rect{
+                stroke: #A4A4A4 !important
+            }
+        }
+    }
+}

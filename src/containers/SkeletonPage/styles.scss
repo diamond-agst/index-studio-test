@@ -1,0 +1,21 @@
+.skeletonRow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    justify-items: center
+}
+
+.skeletonRowHorizontal{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
+    justify-items: center;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+}

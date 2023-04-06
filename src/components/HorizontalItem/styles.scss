@@ -1,0 +1,275 @@
+.itemsRowHorizontal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1000px;
+    justify-items: center;
+    column-gap: 24px;
+    row-gap: 24px;
+    .itemBlockHorizontal{
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin-right: 24px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        cursor: pointer;
+        &:hover{
+            box-shadow:0px 0px 11px rgba(0, 0, 0, 0.31);
+        }
+        .imgItemBlockHorizontal{
+            width: 156px;
+            height: 134px;
+        .sliderItemHorizontal{
+                background: #E8E8E8;
+                width: 156px;
+                height: 134px;
+                border-top-left-radius: 12px;
+                border-bottom-left-radius: 12px;
+                
+            } 
+            .slick-dots{
+                bottom: 6px !important;
+            }
+            .slick-dots li.slick-active button:before{
+                color: #00A0AB !important;
+            }
+            .slick-dots li button:before{
+                font-size: 10px;
+            }
+            .slick-dots li{
+                margin: 0px !important;
+            }
+            .slick-arrow{
+                display: none !important;
+            }
+            
+        }
+        .seenTextHorizontal{
+            position: absolute;
+            top: 10px;
+            left: 8%;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 5px 8px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #2C2C2C;
+        }
+    }
+    .infoItemBlockHorizontal{
+        position: relative;
+        width: 100%;
+        padding: 13px 15px;
+        .priceInfoHorizontal{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 25px;
+                color: #2C2C2C;
+            }
+            svg{
+                position: absolute;
+                top: 13px;
+                right: 15px ;
+                cursor: pointer;
+            }
+            svg:hover{
+                transform: scale(1.1);
+                path{
+                    fill: #A4A4A4
+                }
+            }
+        }
+        .nameItemHorizontal{
+            margin-top: 10px;
+            margin-bottom: 40px;
+            p{
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #2C2C2C;
+            }
+        }
+        .optionInfoHorizontal{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #8F8F8F;
+            }
+        }
+    }
+}
+
+.itemHorizontal{
+    svg{
+        position: absolute;
+        top: 13px;
+        right: 15px ;
+        cursor: pointer;
+    }
+    .activeLike:hover{
+        transform: scale(1.1);
+        path{
+            fill: #A4A4A4
+        }
+    }
+}
+
+.itemVertical{
+    svg{
+        position: absolute;
+        bottom: 23%;
+        right: 15px;
+        cursor: pointer;
+    }
+    .activeLike:hover{
+        transform: scale(1.1);
+        path{
+            fill: #A4A4A4
+        }
+    }
+}
+
+.itemsRow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    justify-items: center
+}
+.itemBlock{
+    width: 224px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    cursor: pointer;
+    &:hover{
+        box-shadow:0px 0px 11px rgba(0, 0, 0, 0.31);
+    }
+    .itemImg{
+        position: relative;
+        .imgItemBlock{
+            width: 224px;
+            height: 260px;
+            border-radius: 12px;
+            .slick-dots{
+                bottom: 6px !important;
+            }
+            .slick-dots li.slick-active button:before{
+                color: #00A0AB !important;
+            }
+            .slick-dots li button:before{
+                font-size: 10px;
+            }
+            .slick-dots li{
+                margin: 0px !important;
+            }
+            .slick-arrow{
+                display: none !important;
+            }
+            .sliderItem{
+                position: relative;
+                background: #E8E8E8;
+                width: 224px;
+                height: 260px;  
+            } 
+        
+    }
+    .seenText{
+            position: absolute;
+            top: 10px;
+            left: 30%;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 5px 8px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #2C2C2C;
+        }
+    }
+    
+    .infoItemBlock{
+        position: relative;
+        padding: 15px 12px;
+        .priceInfo{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            p{
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 25px;
+                color: #2C2C2C;
+            }
+        }
+        .nameItem{
+            margin-bottom: 10px;
+            p{
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #2C2C2C;
+            }
+        }
+        .optionInfo{
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-family: 'Ubuntu';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #8F8F8F;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .itemsRow{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        .itemVertical{
+            margin-right: 24px;
+        }
+    }
+    .itemsRowHorizontal{
+        display: flex !important;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .itemHorizontal{
+        width: 100%;
+        margin: 8px;
+    }
+}
+
+
